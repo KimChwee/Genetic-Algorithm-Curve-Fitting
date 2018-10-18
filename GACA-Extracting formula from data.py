@@ -77,8 +77,8 @@ class DNA(object):
         self.formula = f
 #    <<< Change your file path, file name as required, end your path with \\ >>>
         #fPath = 'C:\\Data\\'
-        #fPath = 'D:\\OneDrive-NUS\\OneDrive - National University of Singapore\\CI2-CA\\'
-        fPath = 'C:\\OneDrive\\OneDrive - National University of Singapore\\CI2-CA\\'
+        fPath = 'D:\\OneDrive-NUS\\OneDrive - National University of Singapore\\CI2-CA\\'
+        #fPath = 'C:\\OneDrive\\OneDrive - National University of Singapore\\CI2-CA\\'
 
         fname = 'GA-Order1Data-007.csv'
         #fname = 'Data-x001.csv'    
@@ -262,7 +262,7 @@ def animate(i):
 random.seed(5)    #for re-production of result during demo
 fig, ax = plt.subplots()
 ax.set_title('Main')
-move_plotWindow(fig, 0, 100)    # Set Main window on the left
+move_plotWindow(fig, 20, 100)    # Set Main window on the left
 ud = DNA(ax)
 #Main Animation Plot
 anim = FuncAnimation(fig, ud, frames=np.arange(100), init_func=ud.init, interval=20, blit=True)
